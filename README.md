@@ -39,3 +39,17 @@ A auditoria de segurança foi realizada em um ambiente controlado, utilizando m�
 | **VM 2: Alvo** | **Metasploitable 2** | [cite_start]Contém o serviço FTP vulnerável a ataques[cite: 5]. | Adaptador Host-Only | 192.168.56.102 (Exemplo) |
 
 > **⚠️ NOTA IMPORTANTE:** Os endereços IP acima são exemplos. É crucial que você **substitua** pelos endereços IP reais das suas máquinas virtuais, que você pode descobrir com o comando `ip a` ou `ifconfig` no Kali Linux e no Metasploitable 2.
+
+## ⚠️ Aviso e Boas Práticas em Segurança
+
+Este projeto foi desenvolvido estritamente para **fins educacionais e de auditoria de segurança**, conforme proposto no Desafio DIO. A aplicação dos conhecimentos aqui documentados deve seguir rigorosamente a **ética profissional**.
+
+**Regras Essenciais:**
+
+* **1. Conhecimento e Responsabilidade:** **Nunca** execute comandos sem o devido conhecimento de seus efeitos e implicações legais. A compreensão é a primeira linha de defesa.
+* **2. Ambiente Controlado:** **Somente** realize testes em ambientes controlados e de sua propriedade (como as VMs Metasploitable 2 ou DVWA). Atacar sistemas sem permissão é ilegal.
+* **3. Profissionalismo:** Utilize ferramentas adequadas para o trabalho, sem improvisação. O uso correto e ético das ferramentas é um sinal de profissionalismo.
+* **4. Organização do Laboratório:** Mantenha seu laboratório virtual e seus arquivos de projeto organizados. A clareza no ambiente de testes leva à clareza na análise de resultados.
+* **5. Conhecimento é Ferramenta:** Lembre-se que o **conhecimento** também é uma ferramenta poderosa. Mantenha sua mente focada e "limpa", dedicando-se ao estudo contínuo e à aplicação ética dos conceitos de segurança.
+
+* ## Desenvolvido por: Cempressa
