@@ -20,3 +20,22 @@ A parte mais importante! [cite_start]Proponha medidas de prevenção/mitigação
 
 ## 🛠️ 5. Recursos e Ferramentas
 [cite_start]Liste as ferramentas utilizadas (Kali Linux, Medusa, Metasploitable 2, DVWA)[cite: 5].
+
+## ⚙️ 2. Configuração do Ambiente
+
+A auditoria de segurança foi realizada em um ambiente controlado, utilizando máquinas virtuais configuradas no **VirtualBox**.
+
+### 2.1. Topologia da Rede
+[cite_start]Para garantir o isolamento dos testes, foi utilizada uma rede interna que simula um ambiente corporativo fechado, conforme recomendado no desafio[cite: 6].
+
+* **Software de Virtualização:** VirtualBox (ou VMWare, etc.)
+* **Tipo de Rede:** **Rede Interna (Host-Only)**, que permite a comunicação apenas entre o Kali Linux e o Metasploitable 2.
+
+### 2.2. Máquinas Virtuais (VMs)
+
+| VM | Sistema Operacional | Função no Teste | Configuração de Rede | Endereço IP (Exemplo) |
+| :--- | :--- | :--- | :--- | :--- |
+| **VM 1: Atacante** | **Kali Linux** | [cite_start]Contém a ferramenta Medusa para execução dos ataques de força bruta[cite: 5]. | Adaptador Host-Only | 192.168.56.101 (Exemplo) |
+| **VM 2: Alvo** | **Metasploitable 2** | [cite_start]Contém o serviço FTP vulnerável a ataques[cite: 5]. | Adaptador Host-Only | 192.168.56.102 (Exemplo) |
+
+> **⚠️ NOTA IMPORTANTE:** Os endereços IP acima são exemplos. É crucial que você **substitua** pelos endereços IP reais das suas máquinas virtuais, que você pode descobrir com o comando `ip a` ou `ifconfig` no Kali Linux e no Metasploitable 2.
